@@ -1,0 +1,14 @@
+resource "aws_s3_bucket_website_configuration" "flemming-friday" {
+  bucket = aws_s3_bucket.flemming-friday.id
+
+  
+
+  index_document {
+    suffix = "index.html"
+  }
+
+  error_document {
+    key = "error.html"
+  }
+
+}
