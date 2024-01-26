@@ -1,0 +1,8 @@
+resource "aws_s3_bucket" "flemming-friday" {
+  bucket = "flemming-friday"
+
+  tags = {
+    Name        = "Fleming Practice Bucket"
+    Environment = "AWS/ADO"
+  }
+}
